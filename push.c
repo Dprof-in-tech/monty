@@ -16,7 +16,7 @@ void push(stack_t **stack, unsigned int line_number)
 	{
 		free(new_node);
 		dprintf(2, "L%u: usage: push integer\n", line_number);
-		exit(0);
+		exit(EXIT_FAILURE);
 	}
 
 	if (global.line_cpy[1][0] == '-')
@@ -30,7 +30,7 @@ void push(stack_t **stack, unsigned int line_number)
 		{
 			free(new_node);
 			dprintf(2, "L%u: usage: push integer\n", line_number);
-			exit(0);
+			exit(EXIT_FAILURE);
 		}
 		i++;
 	}

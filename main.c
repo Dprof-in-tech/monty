@@ -44,7 +44,7 @@ int main(int argc, char **argv)
 		if (get_fun == NULL)
 		{
 			dprintf(2, "L%u: unknown instruction %s\n", line_num, global.line_cpy[0]);
-			exit(0);
+			exit(EXIT_FAILURE);
 		}
 		get_fun(&global.stack, line_num);
 		line_num++;
