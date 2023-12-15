@@ -5,6 +5,7 @@ void (*op_fun(char *string))(stack_t **stack, unsigned int line_number)
 	instruction_t code[] = {
 		{"push", push},
 		{"pall", pall},
+		{"pint", pint},
 		{NULL, NULL},
 	};
 	int i = 0;
