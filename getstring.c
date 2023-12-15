@@ -1,12 +1,12 @@
 #include "monty.h"
 
 /**
- * parse_line - tokenize line
+ * get_line - tokenize line
  * @line: string to be tokenized
  * Return: nothing
  */
 
-void parse_line(char *line)
+void get_line(char *line)
 {
 	char *token = NULL;
 	const char *delim = " \t\n\r";

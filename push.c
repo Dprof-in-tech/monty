@@ -1,5 +1,13 @@
 #include "monty.h"
 
+/**
+ * push - Function to add element to top of stack
+ * @stack: defined stack
+ * @line_number: line number of stack member
+ *
+ * Return : Always 0 
+ */
+
 void push(stack_t **stack, unsigned int line_number)
 {
 	stack_t *new_node;
