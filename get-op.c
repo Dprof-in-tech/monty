@@ -1,5 +1,14 @@
 #include "monty.h"
 
+/**
+ * op_fun - Function to retrieve the op function
+ * @string: the opcode string
+ * @stack: the defined stack
+ * @line_number: the opcode line number
+ *
+ * Return: Always success 0
+ */
+
 void (*op_fun(char *string))(stack_t **stack, unsigned int line_number)
 {
 	instruction_t code[] = {
