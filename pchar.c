@@ -10,7 +10,7 @@
 
 void pchar(stack_t **stack, unsigned int line_number)
 {
-	stack_t *top, *next;
+	stack_t *top;
 	(void) line_number;
 
 	top = *stack;
@@ -27,9 +27,11 @@ void pchar(stack_t **stack, unsigned int line_number)
 		exit(EXIT_FAILURE);
 	}
 	printf("%c\n", top->n);
-	next = top->next;
-	*stack = next;
-	next->prev = NULL;
+
+
+	*stack = top->next;
+	if (top->next != NULL)
+		top->next->prev = NULL;
 
 	free(top);
 }
