@@ -20,6 +20,7 @@ void (*op_fun(char *string))(stack_t **stack, unsigned int line_number)
 		{"add", add},
 		{"nop", nop},
 		{"sub", sub},
+		{"div", divide},
 		{NULL, NULL},
 	};
 	int i = 0;
