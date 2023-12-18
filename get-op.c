@@ -24,6 +24,7 @@ void (*op_fun(char *string))(stack_t **stack, unsigned int line_number)
 		{"mul", mul},
 		{"mod", mod},
 		{"pchar", pchar},
+		{"pstr", pstr},
 		{NULL, NULL},
 	};
 	int i = 0;
