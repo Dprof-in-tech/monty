@@ -18,12 +18,13 @@ void sub(stack_t **stack, unsigned int line_number)
 
 	if (top == NULL || top->next == NULL)
 	{
-		dprintf(2, "L%u: can't sub, stack too short", line_number);
+		dprintf(2, "L%u: can't sub, stack too short\n", line_number);
 		exit(EXIT_FAILURE);
 	}
 
 	next =top->next;
 	next->n -= top->n;
+
 	*stack = next;
 	next->prev = NULL;
 
