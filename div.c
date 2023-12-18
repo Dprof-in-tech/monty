@@ -21,7 +21,7 @@ void divide(stack_t **stack, unsigned int line_number)
 		dprintf(2, "L%u: can't div, stack too short\n", line_number);
 		exit(EXIT_FAILURE);
 	}
-	if (next == 0)
+	if (top->n == 0)
 	{
 		dprintf(2, "L%u: division by zero\n", line_number);
 		exit(EXIT_FAILURE);
