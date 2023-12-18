@@ -10,10 +10,7 @@
 
 void nop(stack_t **stack, unsigned int line_number)
 {
-	stack_t *top;
 	(void) line_number;
 
-	top = *stack;
-
-	free(top);
+	free(*stack);
 }
